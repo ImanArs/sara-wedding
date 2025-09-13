@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Decorative animations for flowers */
+@keyframes sway {
+  0% { transform: rotate(-2.2deg) translateY(0px); }
+  50% { transform: rotate(2.2deg) translateY(2px); }
+  100% { transform: rotate(-2.2deg) translateY(0px); }
+}
+
+.animate-sway {
+  transform-origin: bottom center;
+  animation: sway 4.5s ease-in-out infinite;
+}
+
+@keyframes bloom {
+  0% { opacity: 0; transform: translate(0, 0) scale(0.7); }
+  30% { opacity: 0; transform: translate(0, 0) scale(0.7); }
+  55% { opacity: 1; transform: translate(var(--tx, 0), var(--ty, 0)) scale(1); }
+  100% { opacity: 1; transform: translate(calc(var(--tx, 0) * 1.05), calc(var(--ty, 0) * 1.05)) scale(1); }
+}
+
+.bloom-clone {
+  animation: bloom 3s ease-out infinite;
+  animation-delay: var(--delay, 0s);
+}
