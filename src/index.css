@@ -4,6 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
 @import "tailwindcss";
 
+body {
+  background: #FAF8F1;
+}
+
 :root {
   font-family: "Ysabeau Infant", sans-serif;
   line-height: 1.5;
