@@ -1,0 +1,54 @@
+{
+  "lang.ru": "Русский",
+  "lang.ky": "Кыргызча",
+  "lang.label": "Язык",
+
+  "names.banner": "БУДЕМ РАДЫ ВИДЕТЬ ВАС НА СВАДЬБЕ",
+  "names.and": "и",
+  "names.venueLine": "Ресторан «Ата»",
+
+  "date.weekday": "Четверг",
+  "date.month": "октября",
+  "date.day": "23",
+  "date.year": "2025",
+
+  "invite.greeting": "Дорогие гости",
+  "invite.text": "С большой радостью и трепетом мы приглашаем вас разделить с нами счастье неповторимого события — день нашей свадьбы.",
+
+  "venue.title": "Место проведения",
+  "venue.place": "Ресторан «Ата», Бишкек",
+  "venue.sectionTitle": "место проведения",
+  "venue.name": "Ресторан «Ата»",
+  "venue.address": "Адрес: г. Бишкек, ул. Мадиев 22Б",
+
+  "timeline.title": "Программа",
+  "timeline.item1.title": "Сбор гостей",
+  "timeline.item1.desc": "Встреча и рассадка гостей перед началом церемонии",
+  "timeline.item2.title": "Начало",
+  "timeline.item2.desc": "Официальное открытие торжества",
+  "timeline.item3.title": "Регистрация",
+  "timeline.item3.desc": "Торжественная регистрация брака",
+
+  "rsvp.title": "Анкета гостя",
+  "rsvp.question": "Сможете прийти?",
+  "rsvp.yes": "Приду",
+  "rsvp.no": "Не приду",
+
+  "guestForm.title": "Анкета гостя",
+  "guestForm.description": "Чтобы сделать празднование более комфортным, пожалуйста, заполните данную анкету и подтвердите своё присутствие.",
+  "guestForm.nameLabel": "Ваше имя и фамилия",
+  "guestForm.namePlaceholder": "Фамилия и имя",
+  "guestForm.confirmAttendance": "Подтвердите своё присутствие",
+  "guestForm.optionYes": "Обязательно буду",
+  "guestForm.optionNo": "К сожалению, не смогу присутствовать",
+  "guestForm.submit": "Отправить анкету",
+
+  "guestForm.alert.thanks": "Спасибо!",
+  "guestForm.alert.name": "Имя:",
+  "guestForm.alert.attendance": "Присутствие:",
+  "guestForm.alert.status.yes": "Буду",
+  "guestForm.alert.status.no": "Не смогу",
+
+  "closing.line": "Будем счастливы видеть вас на нашем празднике!",
+  "owners": "Хозяева торжества"
+}

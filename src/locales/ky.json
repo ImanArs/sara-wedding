@@ -1,0 +1,54 @@
+{
+  "lang.ru": "Русский",
+  "lang.ky": "Кыргызча",
+  "lang.label": "Тил",
+
+  "names.banner": "СИЗДИ БИЗДИН ТОЮБУЗГА ЧАКЫРАБЫЗ",
+  "names.and": "жана",
+  "names.venueLine": "«Ата» рестораны",
+
+  "date.weekday": "Бейшемби",
+  "date.month": "Октябрь",
+  "date.day": "23",
+  "date.year": "2025",
+
+  "invite.greeting": "Урматтуу коноктор",
+  "invite.text": "Сиздерди балдарыбыздын үйлөнүү үлпөт тоюна арналган салтанаттуу кечеге келип, ак дасторкондун үстүндө бата берип, кадырлуу коногубуз болуп кетүүгө чакырабыз!",
+
+  "venue.title": "Өткөрүлүүчү жай",
+  "venue.place": "«Ата» рестораны, Бишкек",
+  "venue.sectionTitle": "Өткөрүлүүчү жай",
+  "venue.name": "«Ата» рестораны",
+  "venue.address": "Дарек: Бишкек ш., Мадиев көч. 22Б",
+
+  "timeline.title": "Иш-чара тартиби",
+  "timeline.item1.title": "Коноктор чогулуу",
+  "timeline.item1.desc": "Саламатташуу жана орундарга жайгашуу",
+  "timeline.item2.title": "Башталышы",
+  "timeline.item2.desc": "Иш-чаранын расмий ачылышы",
+  "timeline.item3.title": "Каттоо",
+  "timeline.item3.desc": "Никени салтанаттуу каттоо",
+
+  "rsvp.title": "Конок анкетасы",
+  "rsvp.question": "Келе аласызбы?",
+  "rsvp.yes": "Келем",
+  "rsvp.no": "Келбейм",
+
+  "guestForm.title": "Конок анкетасы",
+  "guestForm.description": "Майрам ыңгайлуу өтүшү үчүн, сураныч, ушул анкетаны толтуруп, катышаарыңызды ырастаңыз.",
+  "guestForm.nameLabel": "Атыңыз жана фамилияңыз",
+  "guestForm.namePlaceholder": "Аты-жөнү",
+  "guestForm.confirmAttendance": "Катышаарыңызды ырастаңыз",
+  "guestForm.optionYes": "Сөзсүз келем",
+  "guestForm.optionNo": "Тилекке каршы, келе албайм",
+  "guestForm.submit": "Анкетаны жөнөтүү",
+
+  "guestForm.alert.thanks": "Рахмат!",
+  "guestForm.alert.name": "Ысым:",
+  "guestForm.alert.attendance": "Катышуу:",
+  "guestForm.alert.status.yes": "Келем",
+  "guestForm.alert.status.no": "Келбейм",
+
+  "closing.line": "Сиздерди майрамыбызда көргөнүбүзгө кубанычтабыз!",
+  "owners": "Той ээлери"
+}

@@ -1,4 +1,7 @@
+import { useI18n } from "../i18n";
+
 export default function Names() {
+  const { t } = useI18n();
   return (
     <section className="relative h-screen text-center py-16 bg-[url('/bg/bg_2.png')] bg-no-repeat bg-top bg-cover overflow-hidden">
       {/* TOP DECOR (два одинаковых, правый отзеркален) */}
@@ -20,31 +23,43 @@ export default function Names() {
       </div>
 
       {/* MONOGRAM */}
-      <div className="absolute top-[11%] left-1/2 -translate-x-1/2 z-10">
-        <p className="text-[34px] md:text-[38px] tracking-wide">D&amp;A</p>
+      <img
+        src="/fl/top.png"
+        className="top-10 absolute left-1/2 -translate-x-1/2 z-[9] w-[240px]"
+        alt=""
+      />
+      <div className="absolute flex top-[10%] left-[calc(50%-5px)] -translate-x-1/2 z-10">
+        <p className="text-[34px] font-tangerine tracking-wide relative top-0">
+          S
+        </p>
+        <p className="text-[34px] font-tangerine tracking-wide relative top-2">
+          S
+        </p>
       </div>
 
       {/* TEXT BLOCK */}
-      <div className="relative z-10 w-full flex flex-col gap-4 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 px-6">
-        <p className="uppercase text-gray-500 tracking-wide text-sm">
-          THE HONOR OF YOUR PRESENCE IS REQUESTED AT THE MARRIAGE OF
+      <div className="relative z-10 w-full flex flex-col gap-3 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 px-6">
+        <p className="uppercase text-gray-500 tracking-wide text-lg">
+          {t("names.banner")}
         </p>
 
-        <h1 className="text-3xl font-light tracking-wide text-slate-700">
-          AUDREY BLAIR
+        <h1 className="mt-2 text-3xl italic font-light tracking-wide text-slate-700">
+          Шералы
         </h1>
 
-        <p className="italic text-gray-400">and</p>
-
-        <h1 className="text-3xl font-light tracking-wide text-slate-700">
-          DAVIS JAMES HILL
-        </h1>
-
-        <p className="mt-2 text-sm uppercase tracking-wide text-gray-500">
-          SATURDAY, Октябрь 23, 2025
+        <p className="italic text-[22px] leading-4 text-gray-400">
+          {t("names.and")}
         </p>
-        <p className="text-sm uppercase tracking-wide text-gray-500">
-          Holiday Inn, New York
+
+        <h1 className="pb-2 text-3xl italic font-light tracking-wide text-slate-700">
+          Сара
+        </h1>
+
+        <p className="mt-2 leading-4 text-lg uppercase tracking-wide text-gray-500">
+          {t("date.weekday")}, {t("date.day")} {t("date.month")} {t("date.year")}
+        </p>
+        <p className="text-lg uppercase tracking-wide text-gray-500">
+          {t("names.venueLine")}
         </p>
       </div>
 

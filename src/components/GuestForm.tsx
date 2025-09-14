@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { useI18n } from "../i18n";
 
 export default function GuestForm() {
+  const { t } = useI18n();
   const [name, setName] = useState("");
   const [attendance, setAttendance] = useState<"yes" | "no" | "">("");
 
@@ -8,8 +10,14 @@ export default function GuestForm() {
     e.preventDefault();
     // TODO: send to your backend / Google Sheet etc.
     alert(
-      `Спасибо!\nИмя: ${name || "—"}\nПрисутствие: ${
-        attendance === "yes" ? "Буду" : attendance === "no" ? "Не смогу" : "—"
+      `${t("guestForm.alert.thanks")}\n${t("guestForm.alert.name")} ${
+        name || "—"
+      }\n${t("guestForm.alert.attendance")} ${
+        attendance === "yes"
+          ? t("guestForm.alert.status.yes")
+          : attendance === "no"
+          ? t("guestForm.alert.status.no")
+          : "—"
       }`
     );
   }
@@ -72,35 +80,31 @@ export default function GuestForm() {
       >
         {/* Заголовок в каллиграфическом стиле */}
         <h2 className="text-5xl md:text-6xl font-light italic leading-none mb-2">
-          Анкета гостя
+          {t("guestForm.title")}
         </h2>
 
-        <p className="text-lg md:text-xl leading-5 opacity-90">
-          Чтобы сделать празднование более комфортным, пожалуйста, заполните
-          данную анкету и подтвердите своё присутствие.
+        <p className="text-lg md:text-xl leading-5 opacity-90 mt-10">
+          {t("guestForm.description")}
         </p>
 
         {/* Имя */}
         <div className="space-y-3">
-          <label
-            htmlFor="name"
-            className="block text-2xl md:text-[26px] font-serif"
-          >
-            Ваше имя и фамилия
+          <label htmlFor="name" className="block text-2xl md:text-[26px]">
+            {t("guestForm.nameLabel")}
           </label>
           <input
             id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            placeholder="ФИО"
+            placeholder={t("guestForm.namePlaceholder")}
             className="w-full rounded-none border border-slate-700/70 bg-transparent px-4 py-4 text-[18px] outline-none placeholder:text-slate-400 focus:border-slate-900"
           />
         </div>
 
         {/* Присутствие */}
         <fieldset className="space-y-4">
-          <legend className="mb-2 text-2xl md:text-[26px] font-serif">
-            Подтвердите своё присутствие
+          <legend className="mb-2 text-2xl md:text-[26px] text-left">
+            {t("guestForm.confirmAttendance")}
           </legend>
 
           <label className="text-left flex items-center gap-3 text-lg">
@@ -112,7 +116,7 @@ export default function GuestForm() {
               onChange={() => setAttendance("yes")}
               className="h-5 w-5 accent-slate-800"
             />
-            <span>Обязательно буду</span>
+            <span>{t("guestForm.optionYes")}</span>
           </label>
 
           <label className="text-left flex items-center gap-3 text-lg">
@@ -124,7 +128,7 @@ export default function GuestForm() {
               onChange={() => setAttendance("no")}
               className="h-5 w-5 accent-slate-800"
             />
-            <span>К сожалению, не смогу присутствовать</span>
+            <span>{t("guestForm.optionNo")}</span>
           </label>
         </fieldset>
 
@@ -133,7 +137,7 @@ export default function GuestForm() {
             type="submit"
             className="inline-flex items-center justify-center rounded-md border border-slate-800/70 px-6 py-3 text-lg tracking-wide transition-colors hover:bg-slate-900 hover:text-white"
           >
-            Отправить анкету
+            {t("guestForm.submit")}
           </button>
         </div>
       </form>

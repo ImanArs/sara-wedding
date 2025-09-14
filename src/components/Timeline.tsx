@@ -1,19 +1,22 @@
+import { useI18n } from "../i18n";
+
 export default function Timeline() {
+  const { t } = useI18n();
   const items = [
     {
       time: "17:00",
-      title: "Сбор гостей",
-      desc: "Встреча и рассадка гостей перед началом церемонии",
+      title: t("timeline.item1.title"),
+      desc: t("timeline.item1.desc"),
     },
     {
       time: "18:00",
-      title: "Начало",
-      desc: "Официальное открытие торжества",
+      title: t("timeline.item2.title"),
+      desc: t("timeline.item2.desc"),
     },
     {
       time: "18:30",
-      title: "Регистрация",
-      desc: "Торжественная регистрация брака",
+      title: t("timeline.item3.title"),
+      desc: t("timeline.item3.desc"),
     },
   ];
 
@@ -54,7 +57,7 @@ export default function Timeline() {
       </div>
       {/* Заголовок */}
       <h2 className="relative z-10 text-5xl md:text-6xl font-light italic leading-none text-slate-800 mb-10">
-        Программа
+        {t("timeline.title")}
       </h2>
 
       <ul className="relative z-10 space-y-12">
@@ -64,7 +67,7 @@ export default function Timeline() {
             className="grid grid-cols-[auto_1px_1fr] gap-6 items-center"
           >
             {/* Время вертикально */}
-            <span className="text-slate-500 tracking-[0.2em] text-sm md:text-base [writing-mode:vertical-rl] rotate-180 select-none">
+            <span className="text-slate-500 tracking-[0.2em] font-medium text-base [writing-mode:vertical-rl] rotate-180 select-none">
               {it.time}
             </span>
 
